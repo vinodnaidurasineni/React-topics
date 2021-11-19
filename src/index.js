@@ -4,13 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import HelloComp from './HelloComponent';
+import StateUsage from './StateUsage';
+import PropsUsageComp from './PropsUsage';
+import Parent from './parentComp';
+import LcmComp from './LCM';
 // let name="test"
 // let sample=<React.Fragment><h1>
 //   started react {}</h1><h2>name</h2></React.Fragment>
 
 
 ReactDOM.render(
-    <App/>,
+    // <App/>,
+    //<HelloComp/>,
+    //<StateUsage/>,
+    //<PropsUsageComp name="Jane" greeting="Morning"/>,
+    //<Parent/>,
+    <LcmComp/>,
   document.getElementById('root')
 );
 
