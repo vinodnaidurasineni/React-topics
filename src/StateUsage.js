@@ -5,7 +5,7 @@ class StateUsage extends React.Component {
     constructor(){
         super();
         //this.counter = 0;
-        this.state ={
+        this.state = {
             counter: 0
         }
     }
@@ -16,10 +16,11 @@ class StateUsage extends React.Component {
         console.log("Button Clicked");
         //this.counter= this.counter + 1;
         //this.state.counter = this.state.counter + 1;
+        
+        //this.setState((previousState ) => { return {counter: previousState.counter+1}})
+        this.setState({counter: this.state.counter+1})
         this.setState((previousState ) => { return {counter: previousState.counter+1}})
-        this.setState((previousState ) => { return {counter: previousState.counter+1}})
-        // this.setState({counter: this.state.counter+1})
-        // this.setState({counter: this.state.counter+1})
+        //this.setState({counter: this.state.counter+1})
         // this.setState({counter: this.state.counter+1})
         //console.log(this.counter)
     }
@@ -27,8 +28,8 @@ class StateUsage extends React.Component {
         return(
             <div>
                 <button onClick={this.incrementCounter}>Click</button>
-                
                 <p>{this.state.counter}</p>
+                
             </div>
         )
     }

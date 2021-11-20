@@ -8,9 +8,9 @@ class HelloComp extends React.Component{
         this.name ="Jane"
     }
 
-    displayName = () => {
+    displayName = (name) => {
         return (
-            <h1>{this.name}</h1>
+            <h1>Hi my {name} is {this.name}</h1>
         )
     }
     render(){
@@ -18,7 +18,7 @@ class HelloComp extends React.Component{
             <div>
             <h1>Hello Component Works</h1>
             <span> Hello {this.name}</span>
-            <span>{this.displayName()}</span>
+            <span>{this.displayName("name")}</span>
             </div>
         )
     }

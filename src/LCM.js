@@ -8,20 +8,41 @@ class LcmComp extends React.Component {
 
     //Mounting Phase 
     //After preparing component with basic needs, state and props, it is ready to mount
+
+    constructor() {
+        super();
+        this.state= {
+            favColor: "pink"   
+           }
+    }
     componentWillMount() {
      //exec just before compoent is about to mount on DOM
      console.log("component will mount ")
+     setTimeout(() => {
+      this.setState({favColor:"yellow"})},1000)
      debugger
     }
     render() {
         return (
-            <h1>Hello</h1>
+            <h1 id="myelement">My Fav Color is {this.state.favColor}</h1>
         )
     }
     componentDidMount() {
     //exec after comp is mounted on DOM
-    console.log("AFter Mounting")
+    //console.log("AFter Mounting")
+    setTimeout(() => {
+        this.setState({favColor: "red"})
+    },2000)
     }
+
+    componentDidUpdate(){
+        document.getElementById("myelement").innerHTML = "Updated fav is" + this.state.favColor
+    }
+
+    componentWillUnmount() {
+      alert("unmounting")
+    }
+    
 
 }
 
