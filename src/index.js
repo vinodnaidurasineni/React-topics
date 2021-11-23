@@ -9,6 +9,7 @@ import StateUsage from './StateUsage';
 import PropsUsageComp from './PropsUsage';
 import Parent from './parentComp';
 import LcmComp from './LCM';
+import RouterLink from './Router';
 // let name="test"
 // let sample=<React.Fragment><h1>
 //   started react {}</h1><h2>name</h2></React.Fragment>
@@ -20,7 +21,7 @@ ReactDOM.render(
     //<StateUsage/>,
     //<PropsUsageComp name="Jane" greeting="Morning"/>,
     //<Parent/>,
-    <LcmComp/>,
+    <RouterLink/>,
   document.getElementById('root')
 );
 
