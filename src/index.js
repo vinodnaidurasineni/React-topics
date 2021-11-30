@@ -10,6 +10,7 @@ import PropsUsageComp from './PropsUsage';
 import Parent from './parentComp';
 import LcmComp from './LCM';
 import renderPage from './ReduxUsage';
+import RouterLink from './Router';
 // let name="test"
 // let sample=<React.Fragment><h1>
 //   started react {}</h1><h2>name</h2></React.Fragment>
@@ -23,6 +24,7 @@ ReactDOM.render(
     //<Parent/>,
     //<LcmComp/>,
      renderPage(),
+    <RouterLink/>,
   document.getElementById('root')
 );
 

@@ -20,7 +20,7 @@ class LcmComp extends React.Component {
      console.log("component will mount ")
      setTimeout(() => {
       this.setState({favColor:"yellow"})},1000)
-     debugger
+    //  debugger
     }
     render() {
         return (
@@ -36,7 +36,8 @@ class LcmComp extends React.Component {
     }
 
     componentDidUpdate(){
-        document.getElementById("myelement").innerHTML = "Updated fav is" + this.state.favColor
+        // document.getElementById("myelement").innerHTML = "Updated fav is" + this.state.favColor
+        console.log("came to update")
     }
 
     componentWillUnmount() {
